@@ -101,6 +101,15 @@ static void *mdcache_param_init(void *link_mem, void *self_struct)
 		return NULL;
 }
 
+struct config_block cache_inode_param_blk = {
+	.dbus_interface_name = "org.ganesha.nfsd.config.cache_inode",
+	.blk_desc.name = "CacheInode",
+	.blk_desc.type = CONFIG_BLOCK,
+	.blk_desc.u.blk.init = mdcache_param_init,
+	.blk_desc.u.blk.params = mdcache_params,
+	.blk_desc.u.blk.commit = noop_conf_commit
+};
+
 struct config_block mdcache_param_blk = {
 	.dbus_interface_name = "org.ganesha.nfsd.config.cache_inode",
 	.blk_desc.name = "MDCACHE",
