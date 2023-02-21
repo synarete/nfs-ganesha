@@ -34,12 +34,12 @@
 #include "prometheus/registry.h"
 
 extern "C" {
-#include "monitoring.h"  /* NOLINT */
-#include "nfs_convert.h"  /* NOLINT */
-#include "log.h"  /* NOLINT */
+#include "monitoring.h"
+#include "nfs_convert.h"
+#include "log.h"
 }
 
-#include "monitoring_internal.h"  /* NOLINT */
+#include "monitoring_internal.h"
 
 /*
  * This file contains the C++ monitoring implementation for Ganesha.

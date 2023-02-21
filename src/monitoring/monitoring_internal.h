@@ -30,7 +30,7 @@
 #ifdef __cplusplus
 
 extern "C" {
-#include "monitoring.h"  /* NOLINT */
+#include "monitoring.h"
 }
 
 #include <memory>
